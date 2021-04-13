@@ -8,9 +8,13 @@ pod install
  
 
 
-import UIKit
 
+
+
+import UIKit
 import Razorpay
+
+
 
 class ViewController: UIViewController, RazorpayPaymentCompletionProtocol {
     
@@ -36,7 +40,7 @@ class ViewController: UIViewController, RazorpayPaymentCompletionProtocol {
     
     
    func onPaymentError(_ code: Int32, description str: String) {
-   
+  
         let alert = UIAlertController(title: "Failure", message: str, preferredStyle: .alert)
         let cancel = UIAlertAction(title: "cancel", style: .cancel, handler: nil)
         alert.addAction(cancel)
