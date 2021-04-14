@@ -27,6 +27,7 @@ class ViewController: UIViewController, RazorpayPaymentCompletionProtocol {
     }
     
    override func viewWillAppear(_ animated: Bool) {
+   
         super.viewWillAppear(animated)
         self.showPaymentForm()    
     }
@@ -35,6 +36,7 @@ class ViewController: UIViewController, RazorpayPaymentCompletionProtocol {
     //action event
     
    @IBAction func processpay(_ sender: UIButton)    
+   
         showPaymentForm()
     }
     
@@ -58,6 +60,7 @@ class ViewController: UIViewController, RazorpayPaymentCompletionProtocol {
     
     
    internal func showPaymentForm(){
+   
         let options: [String:Any] = [
             "amount": "152000", //This is in currency subunits.100 = 100 paise= INR 1.
             "description": "purchase description",
